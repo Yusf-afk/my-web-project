@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Item - Badalni</title>
+  <link rel="stylesheet" href="add-item.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Badalni</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="additem.html">Add Item</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <h1>Add New Item</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="itemName">Item Name</label>
+      <input type="text" id="itemName" name="itemName" required>
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="image">Upload Image</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <label for="tradeOption">Trade Option</label>
+      <select id="tradeOption" name="tradeOption">
+        <option value="trade-only">Trade Only</option>
+        <option value="trade-money">Trade + Money</option>
+      </select>
+
+      <label for="contact">Contact Info</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <button type="submit">Post Item</button>
+    </form>
+  </div>
+</body>
+</html>

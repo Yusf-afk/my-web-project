@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badalni - Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Badalni</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="additem.html">Add Item</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-section">
+    <h1>Welcome to Badalni!</h1>
+    <p>Trade your unused items for something better. Post, browse, and connect with others easily!</p>
+    <a href="#explore" class="btn-primary">Explore Items</a>
+  </header>
+
+  <section class="main-container" id="explore">
+    <h2>Available Items</h2>
+    <div class="item-grid">
+      <div class="item-card" onclick="location.href='item1.html'">
+        <img src="item1.jpg" alt="Item 1">
+        <div class="info">
+          <h3>Gaming Mouse</h3>
+          <p>+ 200 TND</p>
+        </div>
+      </div>
+      <div class="item-card" onclick="location.href='item2.html'">
+        <img src="item2.jpg" alt="Item 2">
+        <div class="info">
+          <h3>Bluetooth Speaker</h3>
+          <p>Trade only</p>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="item3.jpg" alt="Item 3">
+        <div class="info">
+          <h3>Cookware Set</h3>
+          <p>+ 50 TND or item</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Badalni. All rights reserved.</p>
+  </footer>
+</body>
+</html>
