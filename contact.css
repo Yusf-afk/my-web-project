@@ -46,6 +46,40 @@ body {
   .nav-links li a:hover {
     color: #007acc;
   }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 14px;
+    width: 160px;
+    transition: width 0.3s ease;
+  }
+  
+  .search-bar button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #3399ff;
+    color: white;
+    font-size: 14px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #007acc;
+  }
+  
+  .search-bar input[type="text"]:focus {
+    width: 200px;
+  }
   
   .contact-container {
     max-width: 600px;
