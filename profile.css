@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #b3d9ff, #ffffff);
+    overflow-x: hidden; 
+    overflow-y: auto; 
   }
   
   .navbar {
