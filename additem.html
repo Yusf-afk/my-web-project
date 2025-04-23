@@ -21,7 +21,7 @@
     <h1>Add New Item</h1>
     <form action="#" method="post" enctype="multipart/form-data">
       <label for="itemName">Item Name</label>
-      <input type="text" id="itemName" name="itemName" required>
+      <input type="text" id="itemname" name="itemName" required>
 
       <label for="description">Description</label>
       <textarea id="description" name="description" rows="4" required></textarea>
@@ -36,6 +36,38 @@
       </select>
 
       <label for="contact">Contact Info</label>
+      <label for="">first name</label><input type="text" name="" id="firstname" required>
+      <label for="">last name</label><input type="text" name="" id="lastname" required>
+      <label for="">phone number</label><input type="text" name="" id="phonenumber" required>
+      <label for="">second phone number</label><input type="text" placeholder="this one is optional" name="" id="secphonenumber">
+      <label for=""></label><select name="state" id="state">
+        <option value="">-- Select a Governorate --</option>
+        <option value="Ariana">Ariana</option>
+        <option value="Beja">Béja</option>
+        <option value="Ben Arous">Ben Arous</option>
+        <option value="Bizerte">Bizerte</option>
+        <option value="Gabes">Gabès</option>
+        <option value="Gafsa">Gafsa</option>
+        <option value="Jendouba">Jendouba</option>
+        <option value="Kairouan">Kairouan</option>
+        <option value="Kasserine">Kasserine</option>
+        <option value="Kebili">Kebili</option>
+        <option value="Kef">Le Kef</option>
+        <option value="Mahdia">Mahdia</option>
+        <option value="Manouba">Manouba</option>
+        <option value="Medenine">Medenine</option>
+        <option value="Monastir">Monastir</option>
+        <option value="Nabeul">Nabeul</option>
+        <option value="Sfax">Sfax</option>
+        <option value="Sidi Bouzid">Sidi Bouzid</option>
+        <option value="Siliana">Siliana</option>
+        <option value="Sousse">Sousse</option>
+        <option value="Tataouine">Tataouine</option>
+        <option value="Tozeur">Tozeur</option>
+        <option value="Tunis">Tunis</option>
+        <option value="Zaghouan">Zaghouan</option>
+      </select>
+      
       <input type="text" id="contact" name="contact" required>
 
       <button type="submit">Post Item</button>
@@ -68,6 +100,7 @@
       <a href="#top" class="to-top">To the top ▲</a>
     </div>
   </footer>
+  <script src="additem.js"></script>
 </body>
 
 </html>
