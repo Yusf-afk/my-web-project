@@ -1,18 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function verifyForm(){
   username=document.getElementById("username").value
   email=document.getElementById("email").value
