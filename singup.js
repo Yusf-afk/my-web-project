@@ -1,10 +1,21 @@
 
+
+function generateCaptcha() {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let captcha = '';
+  for (let i = 0; i < 6; i++) {
+    captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  document.getElementById('captchaa').value=captcha;
+}
+
 function verifyForm(){
   username=document.getElementById("username").value
   email=document.getElementById("email").value
   pass=document.getElementById("password").value
   confirmpass=document.getElementById("confirmPassword").value
-
+  capt=document.getElementById("captchaa").value
+  vcapt=document.getElementById("vcapt").value
   if(username.length<4){
     alert("username must be longer than 4 carctere");
     return false
@@ -15,6 +26,10 @@ function verifyForm(){
   }
   if(pass!=confirmpass){
     alert("the confirm password doesn't match with the first password ")
+    return false
+  }
+  if(capt!=vcapt){
+    alert("captcha code is false");
     return false
   }
 } 

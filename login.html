@@ -19,13 +19,18 @@
   <div class="login-container">
     <h1>Welcome to Badalni</h1>
     <form method="post" action="home.html">
-      <input type="text" class="input-field" placeholder="Username or Gmail" required />
-      <input type="password" class="input-field" placeholder="Password" required />
+      <input type="text" id="user" class="input-field" placeholder="Username or Gmail" required />
+      <input type="password" id="pass" class="input-field" placeholder="Password" required />
+      <input type="text" class="input-field" id="captchaa" placeholder="CAPTCHA code" readonly > 
+      <input onclick="generateCaptcha()"  id="cap" type="button" value="generate captcha code ">
+      <input type="text"class="input-field" id="vcapt" placeholder="write the captcha code ">
       <button type="submit" class="login-button"  >Login </button>
     </form>
     <p class="footer-text">Don't have an account? <a href="signup.html">Sign up</a></p>
   </div>
-  <footer class="site-footer">
+  <script src="login.js"></script>
+</body>
+<footer class="site-footer">
     <div class="footer-top">
       <div class="footer-logo">
         <img src="images/logo.png" alt="Badalni Logo">
@@ -52,6 +57,4 @@
       <a href="#top" class="to-top">To the top ▲</a>
     </div>
   </footer>
-</body>
-
 </html>

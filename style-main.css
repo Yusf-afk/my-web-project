@@ -214,3 +214,18 @@ body {
     text-decoration: underline;
   }
   
+  #cap {
+    background-color: #339cff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  #cap:hover {
+    background-color: #007bff;
+  }
