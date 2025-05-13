@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Badalni - Login</title>
-  <link rel="stylesheet" href="style-main.css">
+  <link rel="stylesheet" href="/css/style-main.css">
 </head>
-<body>
+<body onload="generateCaptcha()">
   <nav class="navbar">
     <div class="logo">Badalni</div>
     <ul class="nav-links">
-      <li><a href="#">Help</a></li>
+      <li><a href="help.html">Help</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -18,19 +18,22 @@
 
   <div class="login-container">
     <h1>Welcome to Badalni</h1>
-    <form method="post" action="home.html">
+    <form method="post" action="home.html" onsubmit="return verifyForm()">
       <input type="text" id="user" class="input-field" placeholder="Username or Gmail" required />
       <input type="password" id="pass" class="input-field" placeholder="Password" required />
-      <input type="text" class="input-field" id="captchaa" placeholder="CAPTCHA code" readonly > 
-      <input onclick="generateCaptcha()"  id="cap" type="button" value="generate captcha code ">
-      <input type="text"class="input-field" id="vcapt" placeholder="write the captcha code ">
-      <button type="submit" class="login-button"  >Login </button>
+
+      <label for="captchaa">CAPTCHA Code</label>
+      <input type="text" id="captchaa" class="input-field captcha-display" readonly>
+      <button type="button" id="cap" onclick="generateCaptcha()">↻ Refresh CAPTCHA</button>
+
+      <input type="text" id="vcapt" class="input-field" placeholder="Enter CAPTCHA code">
+
+      <button type="submit" class="login-button" >Login</button>
     </form>
     <p class="footer-text">Don't have an account? <a href="signup.html">Sign up</a></p>
   </div>
-  <script src="login.js"></script>
-</body>
-<footer class="site-footer">
+
+  <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-logo">
         <img src="images/logo.png" alt="Badalni Logo">
@@ -57,4 +60,7 @@
       <a href="#top" class="to-top">To the top ▲</a>
     </div>
   </footer>
+
+  <script src="/js/login.js"></script>
+</body>
 </html>

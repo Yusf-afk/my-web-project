@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Item - Badalni</title>
+  <link rel="stylesheet" href="/css/buy.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Badalni</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="buy-container">
+    <h1>Complete Your Purchase</h1>
+    <form id="buyForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" placeholder="Your Name" required>
+
+      <label for="address">Full Address</label>
+      <textarea id="address" rows="3" placeholder="Street, Building, Floor" required></textarea>
+
+      <label for="region">Governorate</label>
+      <select id="region" required>
+        <option value="">Select</option>
+        <option>Tunis</option>
+        <option>Monastir</option>
+        <option>Sousse</option>
+        <option>Sfax</option>
+        <option>Gabes</option>
+      </select>
+
+      <label for="postal">Postal Code</label>
+      <input type="text" id="postal" placeholder="e.g., 5000" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" placeholder="Your Phone" required>
+
+      <label for="delivery">Delivery Method</label>
+      <select id="delivery" required>
+        <option value="">Choose Method</option>
+        <option>Standard (3-5 days)</option>
+        <option>Express (24-48h)</option>
+        <option>Pickup Point</option>
+      </select>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" required>
+        <option value="">Choose Payment</option>
+        <option>Cash on Delivery</option>
+        <option>Bank Transfer</option>
+        <option>eDinar Smart</option>
+      </select>
+
+      <label for="note">Additional Notes</label>
+      <textarea id="note" rows="3" placeholder="Delivery instructions (optional)"></textarea>
+
+      <button type="submit">Confirm Purchase</button>
+    </form>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Badalni. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/buy.js"></script>
+</body>
+</html>

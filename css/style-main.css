@@ -1,12 +1,18 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #b3d9ff, #ffffff);
-    color: #333;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     overflow-x: hidden; 
     overflow-y: auto; 
   }
   
+  /* Navbar */
   .navbar {
     width: 100%;
     background-color: #ffffff;
@@ -22,6 +28,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #3399ff;
+    white-space: nowrap;
   }
   
   .nav-links {
@@ -83,25 +90,48 @@ body {
     width: 200px;
   }
   
-  .about-container {
-    max-width: 800px;
-    margin: 100px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Login Container */
+  .login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 120px; /* account for fixed navbar */
   }
   
-  .about-container h1 {
+  .login-container h1 {
     color: #3399ff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
-  .about-container p {
-    line-height: 1.6;
-    margin-bottom: 15px;
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     font-size: 16px;
   }
+  
+  .login-button {
+    background-color: #3399ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #007acc;
+  }
+  
   .footer-text {
     margin-top: 150px;
     font-size: 14px;
@@ -182,5 +212,31 @@ body {
   
   .footer-bottom .to-top:hover {
     text-decoration: underline;
+  }
+  
+  #captchaa.captcha-display {
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background: #e0eefe;
+    color: #2b5797;
+    border: 1px dashed #3399ff;
+  }
+  
+  #cap {
+    background-color: #339cff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #cap:hover {
+    background-color: #007bff;
   }
   

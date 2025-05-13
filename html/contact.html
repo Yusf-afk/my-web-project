@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Security - Badalni</title>
-  <link rel="stylesheet" href="security.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Badalni</title>
+  <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
   <nav class="navbar">
@@ -14,28 +14,27 @@
       <button type="submit">🔍</button>
     </form>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">login</a></li>
+      <li><a href="help.html">Help</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="profile.html">Profile</a></li>
     </ul>
   </nav>
 
-  <div class="security-container">
-    <h1>Security at Badalni</h1>
-    <p>Your safety is our top priority. We work hard to protect your data and ensure secure exchanges on our platform.</p>
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>If you have questions, suggestions, or just want to say hello — we'd love to hear from you!</p>
+    <form id="contactForm" class="contact-form" onsubmit="return verifyContactForm()">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
 
-    <h2>Data Encryption</h2>
-    <p>All your personal data is encrypted during transfer using industry-standard SSL encryption.</p>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
 
-    <h2>Secure Login</h2>
-    <p>We use secure authentication and recommend strong passwords to keep your account safe.</p>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-    <h2>Monitoring and Reporting</h2>
-    <p>Our system constantly monitors for suspicious activity. If you encounter anything unusual, please report it to our team.</p>
-
-    <h2>Privacy-First Approach</h2>
-    <p>We never sell or share your information without consent. For full details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+      <button type="submit">Send Message</button>
+    </form>
   </div>
   <footer class="site-footer">
     <div class="footer-top">
@@ -64,5 +63,7 @@
       <a href="#top" class="to-top">To the top ▲</a>
     </div>
   </footer>
+  <script src="/js/contact.js"></script>
 </body>
+
 </html>

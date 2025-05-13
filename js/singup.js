@@ -1,12 +1,12 @@
 
 
 function generateCaptcha() {
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789';
   let captcha = '';
   for (let i = 0; i < 6; i++) {
     captcha += chars.charAt(Math.floor(Math.random() * chars.length));
   }
-  document.getElementById('captchaa').value=captcha;
+  document.getElementById('captchaa').value = captcha;
 }
 
 function verifyForm(){

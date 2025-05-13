@@ -4,27 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badalni - Home</title>
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">Badalni</div>
-    <form class="search-bar">
-      <input type="text" placeholder="Search..." name="search">
-      <button type="submit">🔍</button>
-    </form>
-    <ul class="nav-links">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="additem.html">Add Item</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="login.html">Logout</a></li>
-    </ul>
-  </nav>
+  <form action="">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="logo">Badalni</div>
+        <form class="search-bar">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+      <ul class="nav-links">
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" onclick="return confirmLogout()">Logout</a></li>
+        <li><button id="toggle-mode" type="button">🌙</button></li>
+      </ul>
+    </nav>
+    
+    
+    
 
   <header class="hero-section">
     <h1>Welcome to Badalni!</h1>
     <p>Trade your unused items for something better. Post, browse, and connect with others easily!</p>
     <a href="#explore" class="btn-primary">Explore Items</a>
+    <a href="" class="btn-primary" onclick="randomSuggestion()">Get Suggestion</a>
+    <h2 id="profileName">Youssef</h2>
+    
   </header>
 
   <section class="main-container" id="explore">
@@ -157,6 +167,7 @@
 
 
   </section>
+  
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-logo">
@@ -184,7 +195,8 @@
       <a href="#top" class="to-top">To the top ▲</a>
     </div>
   </footer>
-  
+</form>
+   <script src="/js/home.js"></script>
 </body>
 
 </html>
